@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="benchmarks">
+        <df name="CMakeFiles">
+          <df name="add1.dir">
+          </df>
+          <df name="eval_double1.dir">
+          </df>
+          <df name="expand1.dir">
+          </df>
+          <df name="expand2.dir">
+          </df>
+          <df name="expand2b.dir">
+          </df>
+          <df name="expand3.dir">
+          </df>
+          <df name="expand6.dir">
+          </df>
+          <df name="expand6b.dir">
+          </df>
+          <df name="expand7.dir">
+          </df>
+          <df name="lwbench.dir">
+          </df>
+          <df name="matrix_add1.dir">
+          </df>
+          <df name="matrix_add2.dir">
+          </df>
+          <df name="matrix_mul1.dir">
+          </df>
+          <df name="matrix_mul2.dir">
+          </df>
+          <df name="ntheorybench.dir">
+          </df>
+          <df name="series.dir">
+          </df>
+          <df name="symbench.dir">
+          </df>
+          <df name="symengine_bench.dir">
+          </df>
+        </df>
+        <in>add1.cpp</in>
+        <in>bench.cpp</in>
+        <in>bench_eval_double.cpp</in>
+        <in>eval_double1.cpp</in>
+        <in>expand1.cpp</in>
+        <in>expand2.cpp</in>
+        <in>expand2.m</in>
+        <in>expand2_ginac.cpp</in>
+        <in>expand2b.cpp</in>
+        <in>expand3.cpp</in>
+        <in>expand6.cpp</in>
+        <in>expand6.m</in>
+        <in>expand6_ginac.cpp</in>
+        <in>expand6b.cpp</in>
+        <in>expand6b.m</in>
+        <in>expand6b_ginac.cpp</in>
+        <in>expand7.cpp</in>
+        <in>expand7.m</in>
+        <in>expand7_ginac.cpp</in>
+        <in>lwbench.cpp</in>
+        <in>lwbench_ginac.cpp</in>
+        <in>matrix_add1.cpp</in>
+        <in>matrix_add1_ginac.cpp</in>
+        <in>matrix_add2.cpp</in>
+        <in>matrix_add2_ginac.cpp</in>
+        <in>matrix_mul1.cpp</in>
+        <in>matrix_mul1_ginac.cpp</in>
+        <in>matrix_mul2.cpp</in>
+        <in>matrix_mul2_ginac.cpp</in>
+        <in>ntheorybench.cpp</in>
+        <in>series.cpp</in>
+        <in>series_expansion_sincos_flint.cpp</in>
+        <in>series_expansion_sincos_piranha.cpp</in>
+        <in>series_expansion_sinp.cpp</in>
+        <in>symbench.cpp</in>
+        <in>symbench.m</in>
+        <in>symbench_ginac.cpp</in>
+        <in>symengine_bench.cpp</in>
+        <in>symengine_bench.m</in>
+        <in>symengine_bench_ginac.cpp</in>
+      </df>
+      <df name="bin">
+      </df>
+      <df name="cmake">
+        <in>checkclang.cpp</in>
+        <in>checkcxx11.cpp</in>
+        <in>checkgmpxx.cpp</in>
+        <in>checkstdtostring.cpp</in>
+      </df>
+      <df name="CMakeFiles">
+        <df name="3.5.1">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+        <df name="CMakeTmp">
+        </df>
+        <df name="Export">
+          <df name="lib">
+            <df name="cmake">
+              <df name="symengine">
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="Progress">
+        </df>
+        <in>feature_tests.c</in>
+        <in>feature_tests.cxx</in>
+      </df>
+      <df name="cxx">
+        <df name="CMakeFiles">
+          <df name="CMakeTmp">
+          </df>
+        </df>
+      </df>
+      <df name="doc">
+      </df>
+      <df name="symengine">
+        <df name="CMakeFiles">
+          <df name="all_pch.dir">
+          </df>
+          <df name="all_unity.dir">
+          </df>
+          <df name="clean_cotire.dir">
+          </df>
+          <df name="symengine.dir">
+            <df name="polys">
+            </df>
+          </df>
+          <df name="symengine_pch.dir">
+          </df>
+          <df name="symengine_unity.dir">
+            <df name="cotire">
+            </df>
+          </df>
+        </df>
+        <df name="cotire">
+          <in>symengine_CXX_prefix.cxx</in>
+          <in>symengine_CXX_prefix.hxx</in>
+          <in>symengine_CXX_unity.cxx</in>
+        </df>
+        <df name="polys">
+          <in>basic_conversions.cpp</in>
+          <in>basic_conversions.h</in>
+          <in>msymenginepoly.cpp</in>
+          <in>msymenginepoly.h</in>
+          <in>uexprpoly.cpp</in>
+          <in>uexprpoly.h</in>
+          <in>uintpoly.cpp</in>
+          <in>uintpoly.h</in>
+          <in>uintpoly_flint.cpp</in>
+          <in>uintpoly_flint.h</in>
+          <in>uintpoly_piranha.cpp</in>
+          <in>uintpoly_piranha.h</in>
+          <in>upolybase.h</in>
+          <in>uratpoly.cpp</in>
+          <in>uratpoly.h</in>
+          <in>usymenginepoly.h</in>
+        </df>
+        <df name="tests">
+          <df name="basic">
+            <df name="CMakeFiles">
+              <df name="test_arit.dir">
+              </df>
+              <df name="test_as_numer_denom.dir">
+              </df>
+              <df name="test_as_real_imag.dir">
+              </df>
+              <df name="test_basic.dir">
+              </df>
+              <df name="test_cse.dir">
+              </df>
+              <df name="test_fields.dir">
+              </df>
+              <df name="test_functions.dir">
+              </df>
+              <df name="test_infinity.dir">
+              </df>
+              <df name="test_integer.dir">
+              </df>
+              <df name="test_nan.dir">
+              </df>
+              <df name="test_number.dir">
+              </df>
+              <df name="test_parser.dir">
+              </df>
+              <df name="test_poly.dir">
+              </df>
+              <df name="test_rational.dir">
+              </df>
+              <df name="test_relationals.dir">
+              </df>
+              <df name="test_series.dir">
+              </df>
+              <df name="test_series_generic.dir">
+              </df>
+              <df name="test_sets.dir">
+              </df>
+              <df name="test_solve.dir">
+              </df>
+              <df name="test_subs.dir">
+              </df>
+            </df>
+            <in>subs-symegnine-bak.cpp</in>
+            <in>test_arit.cpp</in>
+            <in>test_as_numer_denom.cpp</in>
+            <in>test_as_real_imag.cpp</in>
+            <in>test_basic.cpp</in>
+            <in>test_cse.cpp</in>
+            <in>test_fields.cpp</in>
+            <in>test_functions.cpp</in>
+            <in>test_infinity.cpp</in>
+            <in>test_integer.cpp</in>
+            <in>test_integer_class.cpp</in>
+            <in>test_nan.cpp</in>
+            <in>test_number.cpp</in>
+            <in>test_parser.cpp</in>
+            <in>test_poly.cpp</in>
+            <in>test_rational.cpp</in>
+            <in>test_relationals.cpp</in>
+            <in>test_series.cpp</in>
+            <in>test_series_expansion_UP.cpp</in>
+            <in>test_series_expansion_URatF.cpp</in>
+            <in>test_series_expansion_URatP.cpp</in>
+            <in>test_series_generic.cpp</in>
+            <in>test_sets.cpp</in>
+            <in>test_solve.cpp</in>
+            <in>test_subs.cpp</in>
+          </df>
+          <df name="CMakeFiles">
+          </df>
+          <df name="cwrapper">
+            <df name="CMakeFiles">
+              <df name="test_cwrapper.dir">
+              </df>
+            </df>
+            <in>test_cwrapper.c</in>
+          </df>
+          <df name="eval">
+            <df name="CMakeFiles">
+              <df name="test_eval_double.dir">
+              </df>
+              <df name="test_evalf.dir">
+              </df>
+              <df name="test_lambda_double.dir">
+              </df>
+            </df>
+            <in>test_eval_arb.cpp</in>
+            <in>test_eval_double.cpp</in>
+            <in>test_eval_mpc.cpp</in>
+            <in>test_eval_mpfr.cpp</in>
+            <in>test_evalf.cpp</in>
+            <in>test_lambda_double.cpp</in>
+          </df>
+          <df name="expression">
+            <df name="CMakeFiles">
+              <df name="test_expression.dir">
+              </df>
+            </df>
+            <in>test_expression.cpp</in>
+          </df>
+          <df name="finitediff">
+            <df name="CMakeFiles">
+              <df name="test_finitediff.dir">
+              </df>
+            </df>
+            <in>test_finitediff.cpp</in>
+          </df>
+          <df name="logic">
+            <df name="CMakeFiles">
+              <df name="test_logic.dir">
+              </df>
+            </df>
+            <in>test_logic.cpp</in>
+          </df>
+          <df name="matrix">
+            <df name="CMakeFiles">
+              <df name="test_matrix.dir">
+              </df>
+            </df>
+            <in>test_matrix.cpp</in>
+          </df>
+          <df name="ntheory">
+            <df name="CMakeFiles">
+              <df name="test_diophantine.dir">
+              </df>
+              <df name="test_ntheory.dir">
+              </df>
+            </df>
+            <in>test_diophantine.cpp</in>
+            <in>test_ntheory.cpp</in>
+          </df>
+          <df name="polynomial">
+            <df name="CMakeFiles">
+              <df name="test_basic_conversions.dir">
+              </df>
+              <df name="test_mexprpoly.dir">
+              </df>
+              <df name="test_mintpoly.dir">
+              </df>
+              <df name="test_uexprpoly.dir">
+              </df>
+              <df name="test_uintpoly.dir">
+              </df>
+              <df name="test_uratpoly.dir">
+              </df>
+            </df>
+            <in>test_basic_conversions.cpp</in>
+            <in>test_mexprpoly.cpp</in>
+            <in>test_mintpoly.cpp</in>
+            <in>test_uexprpoly.cpp</in>
+            <in>test_uintpoly.cpp</in>
+            <in>test_uintpoly_flint.cpp</in>
+            <in>test_uintpoly_piranha.cpp</in>
+            <in>test_uratpoly.cpp</in>
+            <in>test_uratpoly_flint.cpp</in>
+            <in>test_uratpoly_piranha.cpp</in>
+          </df>
+          <df name="printing">
+            <df name="CMakeFiles">
+              <df name="test_ccode.dir">
+              </df>
+              <df name="test_printing.dir">
+              </df>
+            </df>
+            <in>test_ccode.cpp</in>
+            <in>test_printing.cpp</in>
+          </df>
+          <df name="rcp">
+            <df name="CMakeFiles">
+              <df name="test_rcp.dir">
+              </df>
+            </df>
+            <in>test_rcp.cpp</in>
+          </df>
+        </df>
+        <df name="utilities">
+          <df name="catch">
+            <df name="CMakeFiles">
+              <df name="catch.dir">
+              </df>
+            </df>
+            <in>catch.cpp</in>
+            <in>catch.hpp</in>
+          </df>
+          <df name="teuchos">
+            <df name="CMakeFiles">
+              <df name="teuchos.dir">
+              </df>
+            </df>
+            <in>Teuchos_Assert.hpp</in>
+            <in>Teuchos_ConfigDefs.hpp</in>
+            <in>Teuchos_ConstTypeTraits.hpp</in>
+            <in>Teuchos_DLLExportMacro.h</in>
+            <in>Teuchos_ENull.hpp</in>
+            <in>Teuchos_Exceptions.hpp</in>
+            <in>Teuchos_NullIteratorTraits.hpp</in>
+            <in>Teuchos_Ptr.cpp</in>
+            <in>Teuchos_Ptr.hpp</in>
+            <in>Teuchos_PtrDecl.hpp</in>
+            <in>Teuchos_RCP.hpp</in>
+            <in>Teuchos_RCPDecl.hpp</in>
+            <in>Teuchos_RCPNode.cpp</in>
+            <in>Teuchos_RCPNode.hpp</in>
+            <in>Teuchos_TestForException.cpp</in>
+            <in>Teuchos_TestForException.hpp</in>
+            <in>Teuchos_TypeNameTraits.cpp</in>
+            <in>Teuchos_TypeNameTraits.hpp</in>
+            <in>Teuchos_any.hpp</in>
+            <in>Teuchos_config.h</in>
+            <in>Teuchos_dyn_cast.cpp</in>
+            <in>Teuchos_dyn_cast.hpp</in>
+            <in>Teuchos_getBaseObjVoidPtr.hpp</in>
+            <in>Teuchos_map.hpp</in>
+            <in>Teuchos_stacktrace.cpp</in>
+            <in>Teuchos_stacktrace.hpp</in>
+            <in>Teuchos_toString.hpp</in>
+          </df>
+        </df>
+        <in>add.cpp</in>
+        <in>add.h</in>
+        <in>as_real_imag.cpp</in>
+        <in>basic-inl.h</in>
+        <in>basic-methods.inc</in>
+        <in>basic.cpp</in>
+        <in>basic.h</in>
+        <in>codegen.h</in>
+        <in>complex.cpp</in>
+        <in>complex.h</in>
+        <in>complex_double.cpp</in>
+        <in>complex_double.h</in>
+        <in>complex_mpc.cpp</in>
+        <in>complex_mpc.h</in>
+        <in>constants.cpp</in>
+        <in>constants.h</in>
+        <in>cse.cpp</in>
+        <in>cwrapper.cpp</in>
+        <in>cwrapper.h</in>
+        <in>dense_matrix.cpp</in>
+        <in>derivative.cpp</in>
+        <in>derivative.h</in>
+        <in>dict.cpp</in>
+        <in>dict.h</in>
+        <in>diophantine.cpp</in>
+        <in>diophantine.h</in>
+        <in>eval.cpp</in>
+        <in>eval.h</in>
+        <in>eval_arb.cpp</in>
+        <in>eval_arb.h</in>
+        <in>eval_double.cpp</in>
+        <in>eval_double.h</in>
+        <in>eval_mpc.cpp</in>
+        <in>eval_mpc.h</in>
+        <in>eval_mpfr.cpp</in>
+        <in>eval_mpfr.h</in>
+        <in>expand.cpp</in>
+        <in>expression.cpp</in>
+        <in>expression.h</in>
+        <in>fields.cpp</in>
+        <in>fields.h</in>
+        <in>finitediff.cpp</in>
+        <in>finitediff.h</in>
+        <in>flint_wrapper.h</in>
+        <in>functions.cpp</in>
+        <in>functions.h</in>
+        <in>infinity.cpp</in>
+        <in>infinity.h</in>
+        <in>integer.cpp</in>
+        <in>integer.h</in>
+        <in>lambda_double.h</in>
+        <in>llvm_double.cpp</in>
+        <in>llvm_double.h</in>
+        <in>logic.cpp</in>
+        <in>logic.h</in>
+        <in>matrix.cpp</in>
+        <in>matrix.h</in>
+        <in>monomials.cpp</in>
+        <in>monomials.h</in>
+        <in>mp_boost.cpp</in>
+        <in>mp_class.h</in>
+        <in>mp_wrapper.cpp</in>
+        <in>mp_wrapper.h</in>
+        <in>mul.cpp</in>
+        <in>mul.h</in>
+        <in>nan.cpp</in>
+        <in>nan.h</in>
+        <in>ntheory.cpp</in>
+        <in>ntheory.h</in>
+        <in>number.cpp</in>
+        <in>number.h</in>
+        <in>numer_denom.cpp</in>
+        <in>parser.cpp</in>
+        <in>parser.h</in>
+        <in>pow.cpp</in>
+        <in>pow.h</in>
+        <in>printer.cpp</in>
+        <in>printer.h</in>
+        <in>rational.cpp</in>
+        <in>rational.h</in>
+        <in>real_double.cpp</in>
+        <in>real_double.h</in>
+        <in>real_mpfr.cpp</in>
+        <in>real_mpfr.h</in>
+        <in>rewrite.cpp</in>
+        <in>rings.cpp</in>
+        <in>rings.h</in>
+        <in>series.cpp</in>
+        <in>series.h</in>
+        <in>series_flint.cpp</in>
+        <in>series_flint.h</in>
+        <in>series_generic.cpp</in>
+        <in>series_generic.h</in>
+        <in>series_piranha.cpp</in>
+        <in>series_piranha.h</in>
+        <in>series_visitor.h</in>
+        <in>sets.cpp</in>
+        <in>sets.h</in>
+        <in>solve.cpp</in>
+        <in>solve.h</in>
+        <in>sparse_matrix.cpp</in>
+        <in>subs.h</in>
+        <in>symbol.cpp</in>
+        <in>symbol.h</in>
+        <in>symengine_assert.h</in>
+        <in>symengine_casts.h</in>
+        <in>symengine_config.h</in>
+        <in>symengine_exception.h</in>
+        <in>symengine_export.h</in>
+        <in>symengine_rcp.cpp</in>
+        <in>symengine_rcp.h</in>
+        <in>type_codes.inc</in>
+        <in>visitor.cpp</in>
+        <in>visitor.h</in>
+      </df>
+      <df name="Testing">
+        <df name="Temporary">
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

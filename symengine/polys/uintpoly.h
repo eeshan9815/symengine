@@ -137,6 +137,13 @@ public:
 bool divides_upoly(const UIntPoly &a, const UIntPoly &b,
                    const Ptr<RCP<const UIntPoly>> &res);
 
+void div_rem(const UIntPoly &a, const UIntPoly &b,
+                   const Ptr<RCP<const UIntPoly>> &out);
+
+// computes gcd of a and b and sets `out` to gcd
+void gcd(const UIntPoly &a, const UIntPoly &b,
+                   const Ptr<RCP<const UIntPoly>> &out);
+
 } // SymEngine
 
 #endif

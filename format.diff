@@ -1,0 +1,218 @@
+diff --git a/symengine/subs.h b/symengine/subs.h
+index 2fdc5f8bf..06012780a 100644
+--- a/symengine/subs.h
++++ b/symengine/subs.h
+@@ -313,7 +313,7 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                 Mul::dict_add_term_new(outArg(coef), d, exp, t);
+             }
+         }
+-        if (fast_exec) { 
++        if (fast_exec) {
+             result_ = Mul::from_dict(coef, std::move(d));
+             return;
+         }
+@@ -329,31 +329,37 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                     RCP<const Basic> diff_;
+                     if (it != dict.end())
+                         diff_ = sub(it->second, p.second);
+-                    if (it == dict.end() || down_cast<const Number &>(*diff_).is_negative()) {
+-                            exists = false;
+-                            break;
++                    if (it == dict.end()
++                        || down_cast<const Number &>(*diff_).is_negative()) {
++                        exists = false;
++                        break;
+                     } else {
+                         if (!down_cast<const Number &>(*diff_).is_zero())
+-                            Mul::dict_add_term_new(outArg(coef), d, sub(it->second, p.second), p.first);
++                            Mul::dict_add_term_new(outArg(coef), d,
++                                                   sub(it->second, p.second),
++                                                   p.first);
+                     }
+                 }
+                 if (exists) {
+                     for (const auto &p : dict) {
+                         auto it = subst->get_dict().find(p.first);
+                         if (it == subst->get_dict().end())
+-                            Mul::dict_add_term_new(outArg(coef), d, p.second, p.first);
+-                        }
++                            Mul::dict_add_term_new(outArg(coef), d, p.second,
++                                                   p.first);
++                    }
+                     if (is_a_Number(*rep)) {
+                         if (down_cast<const Number &>(*rep).is_zero()) {
+                             result_ = rep;
+                             return;
+                         }
+-                        imulnum(outArg(coef), rcp_static_cast<const Number>(rep));
++                        imulnum(outArg(coef),
++                                rcp_static_cast<const Number>(rep));
+                     } else if (is_a<Mul>(*rep)) {
+                         RCP<const Mul> tmp = rcp_static_cast<const Mul>(rep);
+                         imulnum(outArg(coef), tmp->get_coef());
+                         for (const auto &q : tmp->get_dict()) {
+-                            Mul::dict_add_term_new(outArg(coef), d, q.second, q.first);
++                            Mul::dict_add_term_new(outArg(coef), d, q.second,
++                                                   q.first);
+                         }
+                     } else {
+                         RCP<const Basic> exp, t;
+@@ -370,21 +376,29 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                 if (is_a_Number(*sub1_exp)) {
+                     for (const auto &p : dict) {
+                         auto diff_ = sub(p.second, sub1_exp);
+-                        if (eq(*sub1_base, *(p.first)) and eq(*sub1_exp, *p.second)) {
++                        if (eq(*sub1_base, *(p.first))
++                            and eq(*sub1_exp, *p.second)) {
+                             exists = true;
+-                        } else if (eq(*sub1_base, *(p.first)) and down_cast<const Number &>(*diff_).is_positive()) {
++                        } else if (eq(*sub1_base, *(p.first))
++                                   and down_cast<const Number &>(*diff_)
++                                           .is_positive()) {
+                             exists = true;
+-                            Mul::dict_add_term_new(outArg(coef), d, sub(p.second, sub1_exp), p.first);
++                            Mul::dict_add_term_new(outArg(coef), d,
++                                                   sub(p.second, sub1_exp),
++                                                   p.first);
+                         } else {
+-                            Mul::dict_add_term_new(outArg(coef), d, p.second, p.first);
++                            Mul::dict_add_term_new(outArg(coef), d, p.second,
++                                                   p.first);
+                         }
+                     }
+                 } else {
+                     for (const auto &p : dict) {
+-                        if (eq(*sub1_base, *(p.first)) and eq(*sub1_exp, *p.second)) {
++                        if (eq(*sub1_base, *(p.first))
++                            and eq(*sub1_exp, *p.second)) {
+                             exists = true;
+                         } else {
+-                            Mul::dict_add_term_new(outArg(coef), d, p.second, p.first);
++                            Mul::dict_add_term_new(outArg(coef), d, p.second,
++                                                   p.first);
+                         }
+                     }
+                 }
+@@ -394,12 +408,14 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                             result_ = rep;
+                             return;
+                         }
+-                        imulnum(outArg(coef), rcp_static_cast<const Number>(rep));
++                        imulnum(outArg(coef),
++                                rcp_static_cast<const Number>(rep));
+                     } else if (is_a<Mul>(*rep)) {
+                         RCP<const Mul> tmp = rcp_static_cast<const Mul>(rep);
+                         imulnum(outArg(coef), tmp->get_coef());
+                         for (const auto &q : tmp->get_dict()) {
+-                            Mul::dict_add_term_new(outArg(coef), d, q.second, q.first);
++                            Mul::dict_add_term_new(outArg(coef), d, q.second,
++                                                   q.first);
+                         }
+                     } else {
+                         RCP<const Basic> exp, t;
+@@ -407,17 +423,20 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                         Mul::dict_add_term_new(outArg(coef), d, exp, t);
+                     }
+                 } else
+-                    d = x.get_dict();                
+-            } else if (is_a<Symbol>(*sub1)){
++                    d = x.get_dict();
++            } else if (is_a<Symbol>(*sub1)) {
+                 exists = false;
+                 for (const auto &p : dict) {
+                     if (eq(*sub1, *(p.first)) and eq(*one, *p.second)) {
+                         exists = true;
+-                    } else if (eq(*sub1, *(p.first)) and not eq(*one, *p.second)) {
++                    } else if (eq(*sub1, *(p.first))
++                               and not eq(*one, *p.second)) {
+                         exists = true;
+-                        Mul::dict_add_term_new(outArg(coef), d, sub(p.second, one), p.first);
++                        Mul::dict_add_term_new(outArg(coef), d,
++                                               sub(p.second, one), p.first);
+                     } else {
+-                        Mul::dict_add_term_new(outArg(coef), d, p.second, p.first);
++                        Mul::dict_add_term_new(outArg(coef), d, p.second,
++                                               p.first);
+                     }
+                 }
+                 if (exists) {
+@@ -426,12 +445,14 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                             result_ = rep;
+                             return;
+                         }
+-                        imulnum(outArg(coef), rcp_static_cast<const Number>(rep));
++                        imulnum(outArg(coef),
++                                rcp_static_cast<const Number>(rep));
+                     } else if (is_a<Mul>(*rep)) {
+                         RCP<const Mul> tmp = rcp_static_cast<const Mul>(rep);
+                         imulnum(outArg(coef), tmp->get_coef());
+                         for (const auto &q : tmp->get_dict()) {
+-                            Mul::dict_add_term_new(outArg(coef), d, q.second, q.first);
++                            Mul::dict_add_term_new(outArg(coef), d, q.second,
++                                                   q.first);
+                         }
+                     } else {
+                         RCP<const Basic> exp, t;
+@@ -446,7 +467,8 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                     if (eq(*sub1, *(p.first))) {
+                         exists = true;
+                     } else {
+-                        Mul::dict_add_term_new(outArg(coef), d, p.second, p.first);
++                        Mul::dict_add_term_new(outArg(coef), d, p.second,
++                                               p.first);
+                     }
+                 }
+                 if (exists) {
+@@ -455,12 +477,14 @@ class SubsVisitor : public BaseVisitor<SubsVisitor, XReplaceVisitor>
+                             result_ = rep;
+                             return;
+                         }
+-                        imulnum(outArg(coef), rcp_static_cast<const Number>(rep));
++                        imulnum(outArg(coef),
++                                rcp_static_cast<const Number>(rep));
+                     } else if (is_a<Mul>(*rep)) {
+                         RCP<const Mul> tmp = rcp_static_cast<const Mul>(rep);
+                         imulnum(outArg(coef), tmp->get_coef());
+                         for (const auto &q : tmp->get_dict()) {
+-                            Mul::dict_add_term_new(outArg(coef), d, q.second, q.first);
++                            Mul::dict_add_term_new(outArg(coef), d, q.second,
++                                                   q.first);
+                         }
+                     } else {
+                         RCP<const Basic> exp, t;
+diff --git a/symengine/tests/basic/test_subs.cpp b/symengine/tests/basic/test_subs.cpp
+index cffa8e5ba..d06309969 100644
+--- a/symengine/tests/basic/test_subs.cpp
++++ b/symengine/tests/basic/test_subs.cpp
+@@ -172,14 +172,18 @@ TEST_CASE("Mul: subs", "[subs]")
+ 
+     d.clear();
+     d[mul(x, y)] = z;
+-    r1 = add(add(mul(mul(pow(y, i2), x), i2), mul(i3, pow(x, i2))), mul(i4, pow(y, i2)));
++    r1 = add(add(mul(mul(pow(y, i2), x), i2), mul(i3, pow(x, i2))),
++             mul(i4, pow(y, i2)));
+     r2 = add(add(mul(i3, pow(x, i2)), mul(i4, pow(y, i2))), mul(mul(i2, y), z));
+     REQUIRE(eq(*r1->subs(d), *r2));
+ 
+     d.clear();
+     d[mul(mul(x, y), z)] = i2;
+-    r1 = add(add(mul(mul(mul(pow(y, i3), x), i2), pow(z, i2)), mul(i3, pow(x, i2))), mul(i4, pow(y, i2)));
+-    r2 = add(add(mul(i3, pow(x, i2)), mul(i4, pow(y, i2))), mul(mul(pow(y, i2), z), i4));
++    r1 = add(
++        add(mul(mul(mul(pow(y, i3), x), i2), pow(z, i2)), mul(i3, pow(x, i2))),
++        mul(i4, pow(y, i2)));
++    r2 = add(add(mul(i3, pow(x, i2)), mul(i4, pow(y, i2))),
++             mul(mul(pow(y, i2), z), i4));
+     REQUIRE(eq(*r1->subs(d), *r2));
+ 
+     d.clear();
+@@ -202,7 +206,8 @@ TEST_CASE("Mul: subs", "[subs]")
+ 
+     d.clear();
+     d[mul(y, pow(z, i2))] = x;
+-    r1 = add(add(mul(mul(x, y), pow(z, i2)), mul(mul(z, y), pow(x, i2))), mul(y, pow(z, i3)));
++    r1 = add(add(mul(mul(x, y), pow(z, i2)), mul(mul(z, y), pow(x, i2))),
++             mul(y, pow(z, i3)));
+     r2 = add(add(pow(x, i2), mul(mul(z, y), pow(x, i2))), mul(x, z));
+     REQUIRE(eq(*r1->subs(d), *r2));
+ 

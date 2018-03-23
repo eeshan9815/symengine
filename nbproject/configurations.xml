@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="benchmarks">
+        <in>add1.cpp</in>
+        <in>eval_double1.cpp</in>
+        <in>expand1.cpp</in>
+        <in>expand2.cpp</in>
+        <in>expand2b.cpp</in>
+        <in>expand3.cpp</in>
+        <in>expand6.cpp</in>
+        <in>expand6b.cpp</in>
+        <in>expand7.cpp</in>
+        <in>lwbench.cpp</in>
+        <in>matrix_add1.cpp</in>
+        <in>matrix_add2.cpp</in>
+        <in>matrix_mul1.cpp</in>
+        <in>matrix_mul2.cpp</in>
+        <in>ntheorybench.cpp</in>
+        <in>series.cpp</in>
+        <in>symbench.cpp</in>
+        <in>symengine_bench.cpp</in>
+      </df>
+      <df name="symengine">
+        <df name="cotire">
+          <in>symengine_CXX_unity.cxx</in>
+        </df>
+        <df name="polys">
+          <in>basic_conversions.cpp</in>
+          <in>msymenginepoly.cpp</in>
+          <in>uexprpoly.cpp</in>
+          <in>uintpoly.cpp</in>
+          <in>uratpoly.cpp</in>
+        </df>
+        <df name="tests">
+          <df name="basic">
+            <in>test_arit.cpp</in>
+            <in>test_as_numer_denom.cpp</in>
+            <in>test_as_real_imag.cpp</in>
+            <in>test_basic.cpp</in>
+            <in>test_cse.cpp</in>
+            <in>test_fields.cpp</in>
+            <in>test_functions.cpp</in>
+            <in>test_infinity.cpp</in>
+            <in>test_integer.cpp</in>
+            <in>test_nan.cpp</in>
+            <in>test_number.cpp</in>
+            <in>test_parser.cpp</in>
+            <in>test_poly.cpp</in>
+            <in>test_rational.cpp</in>
+            <in>test_relationals.cpp</in>
+            <in>test_series.cpp</in>
+            <in>test_series_generic.cpp</in>
+            <in>test_sets.cpp</in>
+            <in>test_solve.cpp</in>
+            <in>test_subs.cpp</in>
+          </df>
+          <df name="cwrapper">
+            <in>test_cwrapper.c</in>
+          </df>
+          <df name="eval">
+            <in>test_eval_double.cpp</in>
+            <in>test_evalf.cpp</in>
+            <in>test_lambda_double.cpp</in>
+          </df>
+          <df name="expression">
+            <in>test_expression.cpp</in>
+          </df>
+          <df name="finitediff">
+            <in>test_finitediff.cpp</in>
+          </df>
+          <df name="logic">
+            <in>test_logic.cpp</in>
+          </df>
+          <df name="matrix">
+            <in>test_matrix.cpp</in>
+          </df>
+          <df name="ntheory">
+            <in>test_diophantine.cpp</in>
+            <in>test_ntheory.cpp</in>
+          </df>
+          <df name="polynomial">
+            <in>test_basic_conversions.cpp</in>
+            <in>test_mexprpoly.cpp</in>
+            <in>test_mintpoly.cpp</in>
+            <in>test_uexprpoly.cpp</in>
+            <in>test_uintpoly.cpp</in>
+            <in>test_uratpoly.cpp</in>
+          </df>
+          <df name="printing">
+            <in>test_ccode.cpp</in>
+            <in>test_printing.cpp</in>
+          </df>
+          <df name="rcp">
+            <in>test_rcp.cpp</in>
+          </df>
+        </df>
+        <df name="utilities">
+          <df name="catch">
+            <in>catch.cpp</in>
+          </df>
+        </df>
+        <in>add.cpp</in>
+        <in>basic.cpp</in>
+        <in>complex.cpp</in>
+        <in>complex_double.cpp</in>
+        <in>constants.cpp</in>
+        <in>cse.cpp</in>
+        <in>cwrapper.cpp</in>
+        <in>dense_matrix.cpp</in>
+        <in>derivative.cpp</in>
+        <in>dict.cpp</in>
+        <in>diophantine.cpp</in>
+        <in>eval.cpp</in>
+        <in>eval_double.cpp</in>
+        <in>expand.cpp</in>
+        <in>expression.cpp</in>
+        <in>fields.cpp</in>
+        <in>finitediff.cpp</in>
+        <in>functions.cpp</in>
+        <in>infinity.cpp</in>
+        <in>integer.cpp</in>
+        <in>logic.cpp</in>
+        <in>matrix.cpp</in>
+        <in>monomials.cpp</in>
+        <in>mp_wrapper.cpp</in>
+        <in>mul.cpp</in>
+        <in>nan.cpp</in>
+        <in>ntheory.cpp</in>
+        <in>number.cpp</in>
+        <in>numer_denom.cpp</in>
+        <in>parser.cpp</in>
+        <in>pow.cpp</in>
+        <in>printer.cpp</in>
+        <in>rational.cpp</in>
+        <in>real_double.cpp</in>
+        <in>rewrite.cpp</in>
+        <in>rings.cpp</in>
+        <in>series.cpp</in>
+        <in>series_generic.cpp</in>
+        <in>sets.cpp</in>
+        <in>solve.cpp</in>
+        <in>sparse_matrix.cpp</in>
+        <in>symbol.cpp</in>
+        <in>symengine_rcp.cpp</in>
+        <in>visitor.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O3"/>
+        <element flagsID="1"
+                 commonFlags="-std=c++11 -fPIC -O3 -ffast-math -march=native"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>symengine/tests/basic/test_subs</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>symengine/utilities/catch</pElem>
+              <pElem>.</pElem>
+              <pElem>/usr/include/x86_64-linux-gnu</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>NDEBUG</Elem>
+            </preprocessorList>
+          </cTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="benchmarks/add1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/eval_double1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand2b.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand3.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand6.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand6b.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/expand7.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/lwbench.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/matrix_add1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/matrix_add2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/matrix_mul1.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/matrix_mul2.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/ntheorybench.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/series.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/symbench.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="benchmarks/symengine_bench.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <folder path="0/benchmarks">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/symengine/cotire">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+            <pElem>symengine</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/symengine/polys">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+            <pElem>symengine</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/symengine/tests">
+        <ccTool>
+          <incDir>
+            <pElem>symengine/utilities/catch</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/symengine/utilities">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="symengine/add.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/basic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/complex.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/complex_double.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/constants.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/cotire/symengine_CXX_unity.cxx"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/cse.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/cwrapper.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/dense_matrix.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/derivative.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/dict.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/diophantine.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/eval.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/eval_double.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/expand.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/expression.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/fields.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/finitediff.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/functions.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/infinity.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/integer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/logic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/matrix.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/monomials.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/mp_wrapper.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/mul.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/nan.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/ntheory.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/number.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/numer_denom.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/parser.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/polys/basic_conversions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/polys/msymenginepoly.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/polys/uexprpoly.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/polys/uintpoly.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/polys/uratpoly.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/pow.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/printer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/rational.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/real_double.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/rewrite.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/rings.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/series.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/series_generic.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/sets.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/solve.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/sparse_matrix.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/symbol.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/symengine_rcp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_arit.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_as_numer_denom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_as_real_imag.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_basic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_cse.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_fields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_functions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_infinity.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_integer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_nan.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_number.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_parser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_poly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_rational.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_relationals.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_series.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_series_generic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_sets.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_solve.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/basic/test_subs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/cwrapper/test_cwrapper.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="symengine/tests/eval/test_eval_double.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/eval/test_evalf.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/eval/test_lambda_double.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/expression/test_expression.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/finitediff/test_finitediff.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/logic/test_logic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/matrix/test_matrix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/ntheory/test_diophantine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/ntheory/test_ntheory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_basic_conversions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_mexprpoly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_mintpoly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_uexprpoly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_uintpoly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/polynomial/test_uratpoly.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/printing/test_ccode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/printing/test_printing.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/tests/rcp/test_rcp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/utilities/catch/catch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="symengine/visitor.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+          <incFile>
+            <pElem>symengine/cotire/symengine_CXX_prefix.hxx</pElem>
+          </incFile>
+          <preprocessorList>
+            <Elem>symengine_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
